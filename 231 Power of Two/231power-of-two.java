@@ -1,0 +1,7 @@
+class Solution {
+    public boolean isPowerOfTwo(int n) {
+        if (n <= 0) return false; 
+        double logValue = Math.log(n) / Math.log(2);
+        return Math.abs(logValue - Math.round(logValue)) < 1e-10;
+    }
+}
